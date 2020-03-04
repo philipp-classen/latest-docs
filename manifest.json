@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Latest docs",
+  "author": "Philipp Claßen",
+  "version": "0.1",
+  "description": "Rewrite URLs to point to the latest documention.",
+  "icons": {
+    "16": "images/icon16.png",
+    "64": "images/icon64.png",
+    "128": "images/icon128.png"
+  },
+  "permissions": [
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "jquery-3.4.1.min.js",
+        "rewrite-urls.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png"
+    },
+    "default_title": "Latest documentation"
+  }
+}

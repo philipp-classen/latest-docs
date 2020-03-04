@@ -1,2 +1,3 @@
 # latest-docs
-Rewrite URLs to point to the latest documentation
+
+Simple WebExtension to rewrite URLs to always point to the latest documentation.

@@ -16,4 +16,8 @@ $("a").each(function() {
     this.href = this.href.replace(/^https:\/\/docs.python.org\/2\/library\//, 'https://docs.python.org/3/library/');
     return;
   }
+  if (this.href.startsWith('https://docs.ansible.com/ansible/')) {
+    this.href = this.href.replace(/^https:\/\/docs.ansible.com\/ansible\/[^\\/]+\//, 'https://docs.ansible.com/ansible/latest/');
+    return;
+  }
 });

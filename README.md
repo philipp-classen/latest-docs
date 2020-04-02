@@ -24,6 +24,7 @@ easy to add them (see `rewrite-urls.js`):
 * Crystal
 * Ruby
 * C++ Boost libraries
+* Ansible
 
 ## How to contribute
 

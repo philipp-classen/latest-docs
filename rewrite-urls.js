@@ -26,4 +26,8 @@ $("a").each(function() {
     this.href = this.href.replace(/^https:\/\/docs.ansible.com\/ansible\/[^\\/]+\//, 'https://docs.ansible.com/ansible/latest/');
     return;
   }
+  if (this.href.startsWith('https://cmake.org/cmake/help/v')) {
+    this.href = this.href.replace(/^https:\/\/cmake.org\/cmake\/help\/[^\\/]+\//, 'https://cmake.org/cmake/help/latest/');
+    return;
+  }
 });
